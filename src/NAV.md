@@ -1,7 +1,7 @@
 # YDoc
 ![logo](ydoc/images/dog@1x.png)
 
-* [主页](https://shirojs.buession.com/)
+* [主页](https://prototype.buession.com/)
 * [快速上手](/docs/quickstart.md)
 * [文档](/docs/installation.md)
 * [技术支持](/support.html)
