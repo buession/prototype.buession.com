@@ -4,5 +4,10 @@
   "description": "A native object extension framework for Javascript. ",
   "author": "buession",
   "theme": "demo",
-  "root": "src"
+  "root": "src",
+  "pluginsConfig": {
+    "import-asset": {
+      "js": ["/js/stat.js"]
+    }
+  }
 }
