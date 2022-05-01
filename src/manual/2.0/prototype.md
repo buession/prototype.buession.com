@@ -2,6 +2,8 @@
 
 
 ### **version**
+* 类型：`String`
+
 * 功能描述：获取 Buession Prototype 版本
 
 * 返回值：Buession Prototype 版本
@@ -34,6 +36,8 @@ export default defineComponent({
 
 
 ### **emptyFunction()**
+* 类型：`Function`
+
 * 功能描述：执行一个空方法
 
 * 参数：无
@@ -68,6 +72,8 @@ export default defineComponent({
 
 
 ### **K(x: any)**
+* 类型：`Function`
+
 * 功能描述：返回参数传递的任意值
 
 * 参数：任意值
