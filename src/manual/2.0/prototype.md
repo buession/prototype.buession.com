@@ -1,23 +1,17 @@
 ## Prototype 对象
 
 
-### **isAuthenticated()**
-* 功能描述：验证是否为已认证通过的用户，即：shiro 实例创建创建时传入的 principal 是否不为 null，不包含已记住的用户，这是与 isUser 标签方法的区别所在
+### **version**
+* 功能描述：获取 Buession Prototype 版本
 
-* 参数：无
-
-* 返回值：boolean 用户是否已通过认证
+* 返回值：Buession Prototype 版本
 
 示例：
 
 原生 JavaScript
 ```javascript
 <script type="text/javascript">
-  if(shiro.isAuthenticated() === true) {
-    return "已认证用户";
-  }else{
-    return "未认证用户";
-  }
+  var ver = Prototype.version;
 </script>
 ```
 
@@ -25,8 +19,7 @@ vue
 ```vue
 <template>
   <div>
-    <div v-if="shiro.isAuthenticated() === true">已认证</div>
-    <div v-if="shiro.isAuthenticated() === false">未认证</div>
+    <div>Prototype 版本：{Prototype.version}</div>
   </div>
 </template>
 
@@ -40,23 +33,19 @@ export default defineComponent({
 ```
 
 
-### **isNotAuthenticated()**
-* 功能描述：验证是否为未认证通过用户，即：shiro 实例创建创建时传入的 principal 是否为 null，与 isAuthenticated 相对应，与 isGuest 标签的区别是，该标签包含已记住用户
+### **emptyFunction()**
+* 功能描述：执行一个空方法
 
 * 参数：无
 
-* 返回值：boolean 用户是否未通过认证
+* 返回值：void
 
 示例：
 
 原生 JavaScript
 ```javascript
 <script type="text/javascript">
-  if(shiro.isNotAuthenticated() === true) {
-    return "未认证用户";
-  }else{
-    return "已认证用户";
-  }
+  Prototype.emptyFunction();
 </script>
 ```
 
@@ -64,8 +53,6 @@ vue
 ```vue
 <template>
   <div>
-    <div v-if="shiro.isNotAuthenticated() === true">未认证</div>
-    <div v-if="shiro.isNotAuthenticated() === false">已认证</div>
   </div>
 </template>
 
@@ -73,6 +60,41 @@ vue
 import { defineComponent } from 'vue';
 export default defineComponent({
   setup() {
+    Prototype.emptyFunction()
+  }
+});
+</script>
+```
+
+
+### **K(x: any)**
+* 功能描述：返回参数传递的任意值
+
+* 参数：任意值
+
+* 返回值：参数传递的任意值
+
+示例：
+
+原生 JavaScript
+```javascript
+<script type="text/javascript">
+  var v = Prototype.K(object);
+</script>
+```
+
+vue
+```vue
+<template>
+  <div>
+  </div>
+</template>
+
+<script lang="ts">
+import { defineComponent } from 'vue';
+export default defineComponent({
+  setup() {
+    const v: any = Prototype.K(object)
   }
 });
 </script>
