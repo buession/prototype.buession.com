@@ -1,4 +1,4 @@
-## Prototype 对象
+# Prototype 对象
 
 
 ### **version**
@@ -35,7 +35,7 @@ export default defineComponent({
 ```
 
 
-### **emptyFunction()**
+### **emptyFunction(): void**
 * 类型：`Function`
 
 * 功能描述：执行一个空方法
@@ -78,7 +78,7 @@ export default defineComponent({
 
 * 参数：任意值
 
-* 返回值：参数传递的任意值
+* 返回值：`any` 参数传递的任意值
 
 示例：
 
