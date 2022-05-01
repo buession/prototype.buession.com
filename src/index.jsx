@@ -1,7 +1,7 @@
 ---
 banner:
   name: '一款 JavaScript/TypeScript 原生对象扩展框架'
-  desc: 'Buession Prototype 是基于对原生 JavaScript 对象（如：String、Array、Date）的扩展，和浏览器兼容性的处理，并添加在实际场景中的一些常用方法。'
+  desc: 'Buession Prototype 是基于对原生 JavaScript 对象（如：String、Array、Date）的扩展，可用于 Node 环境，和浏览器兼容性的处理，并添加在实际场景中的一些常用方法。'
   btns: 
     - { name: '开 始', href: '/docs/quickstart.html', primary: true }
     - { name: 'Github >', href: 'https://github.com/buession/buession-prototype' }
