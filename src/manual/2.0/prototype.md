@@ -54,7 +54,7 @@ export default defineComponent({
 ```
 
 vue
-```vue
+```html
 <template>
   <div>
   </div>

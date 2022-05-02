@@ -7,3 +7,5 @@
       * [version](2.0/prototype.md#version)
       * [emptyFunction](2.0/prototype.md#emptyFunction)
       * [K](2.0/prototype.md#K)
+    * [Try 对象](2.0/try.md)
+      * [these](2.0/try.md#these)
