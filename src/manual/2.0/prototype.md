@@ -35,7 +35,7 @@ export default defineComponent({
 ```
 
 
-### **emptyFunction(): void**
+### **emptyFunction()**
 * 类型：`Function`
 
 * 功能描述：执行一个空方法
