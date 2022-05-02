@@ -12,7 +12,7 @@
     * [Optional 类](2.0/optional.md)
       * [of](2.0/optional.md#static-ofValue-t)
       * [ofNullable](2.0/optional.md#static-ofNullableValue-t)
-      * [empty](2.0/optional.md#static-empty-t)
+      * [empty](2.0/optional.md#static-empty)
       * [get](2.0/optional.md#get)
       * [orElse](2.0/optional.md#orElse)
       * [isPresent](2.0/optional.md#isPresent)
