@@ -141,7 +141,7 @@ export default defineComponent({
 ```
 
 
-### **leach(callback: (value: T, index: number, array: readonly T[]) => void, thisArg?: any)**
+### **each(callback: (value: T, index: number, array: readonly T[]) => void, thisArg?: any)**
 * 类型：`Function`
 
 * 功能描述：按顺序为数组中的每个元素调用一次函数，[forEach](https://www.w3school.com.cn/jsref/jsref_foreach.asp)的别名
