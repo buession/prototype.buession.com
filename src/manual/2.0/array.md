@@ -30,7 +30,7 @@ vue
 import { defineComponent } from 'vue';
 export default defineComponent({
   setup() {
-    const result: boolean = ['a', 'b', 'c'].isEmpty(); // false
+    const result: boolean = ['a', 'b', 'c'].isEmpty() // false
   }
 });
 </script>
@@ -66,7 +66,7 @@ vue
 import { defineComponent } from 'vue';
 export default defineComponent({
   setup() {
-    const result: boolean = ['1', '2'].exists(2); // false
+    const result: boolean = ['1', '2'].exists(2) // false
   }
 });
 </script>
@@ -77,6 +77,8 @@ export default defineComponent({
 * 类型：`Function`
 
 * 功能描述：获取数组一个元素
+
+* 参数：无
 
 * 返回值：`any` 数组一个元素
 
@@ -100,7 +102,7 @@ vue
 import { defineComponent } from 'vue';
 export default defineComponent({
   setup() {
-    const result: boolean = [1, 2].first(); // 1
+    const result: boolean = [1, 2].first() // 1
   }
 });
 </script>
@@ -111,6 +113,8 @@ export default defineComponent({
 * 类型：`Function`
 
 * 功能描述：获取数组最后一个元素
+
+* 参数：无
 
 * 返回值：`any` 数组最后一个元素
 
@@ -134,7 +138,7 @@ vue
 import { defineComponent } from 'vue';
 export default defineComponent({
   setup() {
-    const result: boolean = [1, 2].last(); // 2
+    const result: boolean = [1, 2].last() // 2
   }
 });
 </script>
@@ -187,6 +191,8 @@ export default defineComponent({
 
 * 功能描述：获取数组大小
 
+* 参数：无
+
 * 返回值：`number` 数组大小
 
 示例：
@@ -209,7 +215,7 @@ vue
 import { defineComponent } from 'vue';
 export default defineComponent({
   setup() {
-    const result: number = [].size(); // 0
+    const result: number = [].size() // 0
   }
 });
 </script>
@@ -245,7 +251,7 @@ vue
 import { defineComponent } from 'vue';
 export default defineComponent({
   setup() {
-    console result: string[] = ['a', 'b'].merge('c', 'd'); // [a, b, c, d]
+    console result: string[] = ['a', 'b'].merge('c', 'd') // [a, b, c, d]
   }
 });
 </script>
@@ -256,6 +262,8 @@ export default defineComponent({
 * 类型：`Function`
 
 * 功能描述：返回一个不包含 null/undefined 值元素的数组的新版本
+
+* 参数：无
 
 * 返回值：`Array<T>` 不包含 null/undefined 值元素的数组的新版本
 
@@ -290,6 +298,8 @@ export default defineComponent({
 * 类型：`Function`
 
 * 功能描述：对数组的元素进行去重
+
+* 参数：无
 
 * 返回值：`Array<T>` 数组元素进行去重后的新版本
 
@@ -361,6 +371,8 @@ export default defineComponent({
 
 * 功能描述：克隆数组
 
+* 参数：无
+
 * 返回值：`Array<T>` 克隆结果
 
 示例：
@@ -394,6 +406,8 @@ export default defineComponent({
 * 类型：`Function`
 
 * 功能描述：清空数组
+
+* 参数：无
 
 * 返回值：`Array<T>` 空数组
 

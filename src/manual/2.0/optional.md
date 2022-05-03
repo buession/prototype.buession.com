@@ -88,6 +88,8 @@ export default defineComponent({
 
 * 功能描述：返回空的 Optional 实例
 
+* 参数：无
+
 * 返回值：`Object as Optional` 空的 Optional 实例
 
 示例：
@@ -120,6 +122,8 @@ export default defineComponent({
 * 类型：`Function`
 
 * 功能描述：如果 value 不为 null 或 undefined，则返回 value 的值；否则抛出异常
+
+* 参数：无
 
 * 返回值：`any as T` Optional 中包含这个值
 
@@ -192,6 +196,8 @@ export default defineComponent({
 * 类型：`Function`
 
 * 功能描述：如果 value 不为 null 或 undefined，则返回 true；否则返回 false
+
+* 参数：无
 
 * 返回值：`boolean` value 不为 null 或 undefined，则返回 true；否则返回 false
 

@@ -76,7 +76,7 @@ export default defineComponent({
 
 * 功能描述：返回参数传递的任意值
 
-* 参数：任意值
+* 参数：`any` 任意值
 
 * 返回值：`any` 参数传递的任意值
 
