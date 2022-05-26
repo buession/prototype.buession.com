@@ -18,7 +18,7 @@ Optional 类是一个可以为 null 或 undefined 的容器对象，如果值 va
 
 * 功能描述：返回一个指定 T 类型的值的 Optional 实例
 
-* 参数：`any of T` 任意类型的值
+* 参数：value - `any of T` 任意类型的值
 
 * 返回值：`Object` T 类型的值的 Optional 实例
 
@@ -53,7 +53,7 @@ export default defineComponent({
 
 * 功能描述：如果为非 null 或 undefined，返回 Optional 描述的指定值的实例，否则返回空的 Optional 实例
 
-* 参数：`any as T` 任意类型的值
+* 参数：value - `any as T` 任意类型的值
 
 * 返回值：`Object` T 类型的值的 Optional 实例，或空的 Optional 实例
 
@@ -160,7 +160,7 @@ export default defineComponent({
 
 * 功能描述：如果 value 不为 null 或 undefined，则返回 value 的值；否则返回 other
 
-* 参数：`any of T` 任意类型的值
+* 参数：other - `any of T` 任意类型的值
 
 * 返回值：`any as T` value 不为 null 或 undefined，则返回 value 的值；否则返回 other
 

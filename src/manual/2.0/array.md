@@ -42,7 +42,7 @@ export default defineComponent({
 
 * 功能描述：判断元素 item 是否在数组中
 
-* 参数：`any` 待检测元素
+* 参数：item - `any` 待检测元素
 
 * 返回值：`boolean` 元素 item 是否在数组中返回 true；否则返回 false
 
@@ -150,7 +150,7 @@ export default defineComponent({
 
 * 功能描述：按顺序为数组中的每个元素调用一次函数，[forEach](https://www.w3school.com.cn/jsref/jsref_foreach.asp)的别名
 
-* 参数：`(value: T, index: number, array: readonly T[]) => void as Function` callback 为数组中的每个元素运行的函数，其中：value 为前元素的值，index 为当前元素的数组索引，array 为当前元素所属的数组对象
+* 参数：callback - `(value: T, index: number, array: readonly T[]) => void as Function` callback 为数组中的每个元素运行的函数，其中：value 为前元素的值，index 为当前元素的数组索引，array 为当前元素所属的数组对象
        `any` thisArg 可选。要传递给函数以用作其 "this" 值的值，如果此参数为空，则值 "undefined" 将作为其 "this" 值传递
 
 * 返回值：`void`
@@ -227,7 +227,7 @@ export default defineComponent({
 
 * 功能描述：连接两个或多个数组
 
-* 参数：`any as T` 待连接的 T 类型的数组
+* 参数：items - `any as T` 待连接的 T 类型的数组
 
 * 返回值：`Array<T>` 已连接数组的副本
 
@@ -335,7 +335,7 @@ export default defineComponent({
 
 * 功能描述：返回不包括参数中任意一个指定值的数组
 
-* 参数：`any as T[]` 排除值数组
+* 参数：values - `any as T[]` 排除值数组
 
 * 返回值：`Array<T>` 不包括参数中任意一个指定值的数组
 

@@ -150,7 +150,7 @@ export default defineComponent({
 
 * 功能描述：将日期时间格式化为字符串
 
-* 参数：`String` format 格式字符串
+* 参数：format - `String` format 格式字符串
 
         y - 年
 

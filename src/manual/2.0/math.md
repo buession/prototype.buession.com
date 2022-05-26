@@ -1,14 +1,16 @@
 # Function 对象
 
 
-### **argumentNames(...args: any)**
+### **rand(min: number, max?: number)**
 * 类型：`Function`
 
-* 功能描述：获取函数参数名称
+* 功能描述：产生一个指定范围内的随机数
 
-* 参数：args - `any` 1个或多个任意类型的可变参数可变参数
+* 参数：min - `number` 返回的最低值
 
-* 返回值：`string[] | null` 函数参数名称列表
+       max - `number` 返回的最高值
+
+* 返回值：`number` 随机数
 
 示例：
 
@@ -43,12 +45,12 @@ export default defineComponent({
 ```
 
 
-### **delay(timeout: number)**
+### **delay()**
 * 类型：`Function`
 
 * 功能描述：延时执行函数
 
-* 参数：timeout - `number` 延时时间（单位：秒）
+* 参数：`number` 延时时间（单位：秒）
 
 * 返回值：`any` 函数返回值
 

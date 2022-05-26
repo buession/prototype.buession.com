@@ -44,3 +44,5 @@
     * [Function 对象](2.0/function.md)
       * [argumentNames](2.0/function.md#argumentNames)
       * [delay](2.0/function.md#delay)
+    * [Math 对象](2.0/math.md)
+      * [rand](2.0/math.md#rand)
