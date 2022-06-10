@@ -46,3 +46,8 @@
       * [delay](2.0/function.md#delay)
     * [Math 对象](2.0/math.md)
       * [rand](2.0/math.md#rand)
+    * [Number 对象](2.0/number.md)
+      * [toPaddedString](2.0/number.md#toPaddedString)
+      * [isOdd](2.0/number.md#isOdd)
+      * [isEven](2.0/number.md#isEven)
+      * [isBetween](2.0/number.md#isBetween)
