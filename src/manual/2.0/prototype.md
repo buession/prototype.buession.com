@@ -3,17 +3,17 @@
 
 ### 属性
 
-|  属性                                                        | 描述                        |
-|  ----                                                        | ----                       |
-| [version](prototype.html#认证-api-version)                   | 获取 Buession Prototype 版本 |
+|  属性                                                | 描述                        |
+|  ----                                               | ----                        |
+| [version](prototype.html#version)                   | 获取 Buession Prototype 版本 |
 
 
 ### 方法
 
-|  方法                                                        | 描述                    |
-|  ----                                                        | ----                   |
-| [emptyFunction](prototype.html#认证-api-emptyFunction)       | 执行一个空方法            |
-| [K](prototype.html#认证-api-K)                               | 返回参数传递的任意值       |
+|  方法                                                | 描述                    |
+|  ----                                               | ----                    |
+| [emptyFunction](prototype.html#emptyFunction)       | 执行一个空方法            |
+| [K](prototype.html#K)                               | 返回参数传递的任意值       |
 
 
 ---
