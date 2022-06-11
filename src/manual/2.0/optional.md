@@ -1,4 +1,4 @@
-# Optional 类
+# Optional 参考手册
 
 
 Optional 类是一个可以为 null 或 undefined 的容器对象，如果值 value 存在则 isPresent() 方法会返回 true，调用 get() 方法会返回 value 的值。
@@ -6,6 +6,22 @@ Optional 类是一个可以为 null 或 undefined 的容器对象，如果值 va
 
 
 使用方式，在构造函数中传入任意类型值；Optional 提供很多有用的方法，这样我们就不用显式进行 null 值和 undefined 的检测。
+
+
+### 方法
+
+|  方法                                             | 描述                                                              |
+|  ----                                            | ----                                                              |
+| [of](prototype.html#认证-api-of)                  | 返回一个指定 T 类型的值的 Optional 实例                               |
+| [ofNullable](prototype.html#认证-api-ofNullable)  | 如果为非 null 或 undefined，返回 Optional 描述的指定值的实例，否则返回空的 Optional 实例       |
+| [empty](prototype.html#认证-api-empty)            | 返回空的 Optional 实例                                              |
+| [get](prototype.html#认证-api-get)                | 如果 value 不为 null 或 undefined，则返回 value 的值；否则抛出异常      |
+| [orElse](prototype.html#认证-api-orElse)          | 如果 value 不为 null 或 undefined，则返回 value 的值；否则返回 other   |
+| [isPresent](prototype.html#认证-api-isPresent)    | 如果 value 不为 null 或 undefined，则返回 true；否则返回 false         |
+
+
+---
+
 
 ```javascript
 <script type="text/javascript">
