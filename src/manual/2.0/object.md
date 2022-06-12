@@ -537,42 +537,6 @@ export default defineComponent({
 ```
 
 
-### **isBoolean(obj: any)**
-* 类型：`Function`
-
-* 功能描述：判断对象是否为布尔对象
-
-* 参数：obj - `any` 对象变量
-
-* 返回值：`boolean` 对象为布尔对象返回 true；否则返回 false
-
-示例：
-
-原生 JavaScript
-```javascript
-<script type="text/javascript">
-  var result = Object.isBoolean(new Set()); // true
-</script>
-```
-
-vue
-```html
-<template>
-  <div>
-  </div>
-</template>
-
-<script lang="ts">
-import { defineComponent } from 'vue';
-export default defineComponent({
-  setup() {
-    const result: boolean = Object.isBoolean({"a":"A"}) // false
-  }
-});
-</script>
-```
-
-
 ### **isRegExp(obj: any)**
 * 类型：`Function`
 
