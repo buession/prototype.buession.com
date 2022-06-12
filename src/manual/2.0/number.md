@@ -129,8 +129,8 @@ export default defineComponent({
 * 功能描述：判断一个数字是否在另两个数字之间
 
 * 参数：num - `number` 需要判断的数字  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;min - `number` 最小值
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;max - `number` 最大值
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;min - `number` 最小值  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;max - `number` 最大值  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;match - `boolean | undefined` 是否包含最小值或最大值
 
 * 返回值：`boolean` 数字是否在另两个数字之间，返回 true；否则返回 false
