@@ -20,7 +20,7 @@
 * 功能描述：数字填充
 
 * 参数：length - `number` 长度  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;radix - `number` 进制
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;radix - `number` 进制
 
 * 返回值：`string` 填充后的字符串数字
 
@@ -128,13 +128,10 @@ export default defineComponent({
 
 * 功能描述：判断一个数字是否在另两个数字之间
 
-* 参数：num - `number` 需要判断的数字
-
-       min - `number` 最小值
-
-       max - `number` 最大值
-
-       match - `boolean | undefined` 是否包含最小值或最大值
+* 参数：num - `number` 需要判断的数字  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;min - `number` 最小值
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;max - `number` 最大值
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;match - `boolean | undefined` 是否包含最小值或最大值
 
 * 返回值：`boolean` 数字是否在另两个数字之间，返回 true；否则返回 false
 
