@@ -1,4 +1,25 @@
-# Array 对象
+# Array 参考手册
+
+
+### 方法
+
+|  方法                                    | 描述                                           |
+|  ----                                   | ----                                           |
+| [isEmpty](array.html#isempty)           | 判断数组是否为空数组                              |
+| [exists](array.html#existsitem-any)     | 判断元素 item 是否在数组中                        |
+| [first](array.html#first)               | 获取数组第一个元素                                |
+| [last](array.html#last)                 | 获取数组最后一个元素                              |
+| [each](array.html#eachcallback-value-t,-index-number,-array-readonly-t[]-=>-void,-thisarg?-any)       | 按顺序为数组中的每个元素调用一次函数  |
+| [size](array.html#last)                 | 获取数组大小                                     |
+| [merge](array.html#merge...items-t[])   | 连接两个或多个数组                                |
+| [compact](array.html#compact)           | 返回一个不包含 null/undefined 值元素的数组的新版本  |
+| [unique](array.html#unique)             | 对数组的元素进行去重                              |
+| [without](array.html#withoutvalues-t[]) | 返回不包括参数中任意一个指定值的数组                 |
+| [clone](array.html#clone)               | 克隆数组                                         |
+| [clear](array.html#clear)               | 清空数组                                         |
+
+
+---
 
 
 ### **isEmpty()**
@@ -76,11 +97,11 @@ export default defineComponent({
 ### **first()**
 * 类型：`Function`
 
-* 功能描述：获取数组一个元素
+* 功能描述：获取数组第一个元素
 
 * 参数：无
 
-* 返回值：`any` 数组一个元素
+* 返回值：`any` 数组第一个元素
 
 示例：
 
