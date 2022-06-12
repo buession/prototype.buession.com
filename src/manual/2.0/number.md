@@ -3,9 +3,12 @@
 
 ### 方法
 
-|  方法                                                 | 描述                   |
-|  ----                                                | ----                   |
-| [toPaddedString](number.html#randmin-number,-max?-number)        | 延时执行函数             |
+|  方法                                                                                                | 描述                   |
+|  ----                                                                                                | ----                   |
+| [toPaddedString](number.html#topaddedstringlength-number,-radix-number)                              | 延时执行函数             |
+| [isOdd](number.html#isoddnum-number)                                                                 | 判断数字是否为奇数             |
+| [isEven](number.html#isevennum-number)                                                               | 判断数字是否为偶数             |
+| [isBetween](number.html#risbetweennum-number,-min-number,-max-number,-match?-boolean-|-undefined)    | 判断一个数字是否在另两个数字之间             |
 
 
 ---
@@ -17,7 +20,6 @@
 * 功能描述：数字填充
 
 * 参数：length - `number` 长度
-
        radix - `number` 进制
 
 * 返回值：`string` 填充后的字符串数字
@@ -49,7 +51,7 @@ export default defineComponent({
 ```
 
 
-### **isOdd(num: number): boolean**
+### **isOdd(num: number)**
 * 类型：`Function`
 
 * 功能描述：判断数字是否为奇数
@@ -85,7 +87,7 @@ export default defineComponent({
 ```
 
 
-### **isEven(num: number): boolean**
+### **isEven(num: number)**
 * 类型：`Function`
 
 * 功能描述：判断数字是否为偶数
