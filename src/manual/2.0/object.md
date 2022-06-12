@@ -3,31 +3,31 @@
 
 ### 方法
 
-|  方法                                                                 | 描述                           |
-|  ----                                                                | ----                           |
-| [type](object.html#typeobj-any)        | 获取对象数据类型                  |
-| [rawType](object.html#rawtypeobj-any)                               | 获取对象原始数据类型              |
-| [isObject](object.html#isobjectobj-any)                             | 判断对象是否为 object 类型        |
-| [isPlainObject](object.html#isplainobjectobj-any)                        | 判断对象是否为简单 object 类型     |
-| [isMap](object.html#isevennum-number)                        | 判断对象是否为 Map 类型     |
-| [isSet](object.html#isevennum-number)                        | 判断对象是否为 Set 类型     |
-| [isSymbol](object.html#isevennum-number)                        | 判断对象是否为 Symbol     |
-| [isPromise](object.html#isevennum-number)                        | 判断对象是否为 Promise     |
-| [isPrimitive](object.html#isevennum-number)                        | 判断对象是否为原始类型     |
-| [isFunction](object.html#isevennum-number)                        | 判断对象是否为函数     |
-| [isArray](object.html#isevennum-number)                        | 判断对象是否为数组     |
-| [isString](object.html#isevennum-number)                        | 判断对象是否为字符串对象     |
-| [isNumber](object.html#isevennum-number)                        | 判断对象是否为数字对象     |
-| [isBoolean](object.html#isevennum-number)                        | 判断对象是否为布尔对象     |
-| [isRegExp](object.html#isevennum-number)                        | 判断对象是否为正则对象     |
-| [isFile](object.html#isevennum-number)                        | 判断对象是否为文件对象     |
-| [isWindow](object.html#isevennum-number)                        | 判断对象是否为 windows 对象     |
-| [isElement](object.html#isevennum-number)                        | 判断对象是否为 Element     |
-| [isEvent](object.html#isevennum-number)                        | 判断对象是否为事件对象     |
-| [isNull](object.html#isevennum-number)                        | 判断对象是否为 null 对象     |
-| [isUndefined](object.html#isevennum-number)                        | 判断对象是否为未定义     |
-| [isUndefinedOrNull](object.html#isevennum-number)                        | 判断对象是否为未定义或 null     |
-| [clone](object.html#isevennum-number)                        | 克隆对象     |
+|  方法                                                          | 描述                           |
+|  ----                                                         | ----                           |
+| [type](object.html#typeobj-any)                               | 获取对象数据类型                 |
+| [rawType](object.html#rawtypeobj-any)                         | 获取对象原始数据类型              |
+| [isObject](object.html#isobjectobj-any)                       | 判断对象是否为 object 类型        |
+| [isPlainObject](object.html#isplainobjectobj-any)             | 判断对象是否为简单 object 类型    |
+| [isMap](object.html#ismapobj-any)                             | 判断对象是否为 Map 类型           |
+| [isSet](object.html#issetobj-any)                             | 判断对象是否为 Set 类型           |
+| [isSymbol](object.html#issymbolobj-any)                       | 判断对象是否为 Symbol            |
+| [isPromise](object.html#ispromiseobj-any)                     | 判断对象是否为 Promise           |
+| [isPrimitive](object.html#isprimitiveobj-any)                 | 判断对象是否为原始类型            |
+| [isFunction](object.html#isfunctionobj-any)                   | 判断对象是否为函数                |
+| [isArray](object.html#isarrayobj-any)                         | 判断对象是否为数组                |
+| [isString](object.html#isstringobj-any)                       | 判断对象是否为字符串对象           |
+| [isNumber](object.html#isnumberobj-any)                       | 判断对象是否为数字对象             |
+| [isBoolean](object.html#isbooleanobj-any)                     | 判断对象是否为布尔对象             |
+| [isRegExp](object.html#isregexpobj-any)                       | 判断对象是否为正则对象             |
+| [isFile](object.html#isfileobj-any)                           | 判断对象是否为文件对象             |
+| [isWindow](object.html#iswindowobj-any)                       | 判断对象是否为 windows 对象        |
+| [isElement](object.html#iselementobj-any)                     | 判断对象是否为 Element            |
+| [isEvent](object.html#iseventobj-any)                         | 判断对象是否为事件对象             |
+| [isNull](object.html#isnullobj-any)                           | 判断对象是否为 null 对象           |
+| [isUndefined](object.html#isundefinedobj-any)                 | 判断对象是否为未定义               |
+| [isUndefinedOrNull](object.html#isundefinedornullobj-any)     | 判断对象是否为未定义或 null        |
+| [clone](object.html#cloneobj-any)                             | 克隆对象                         |
 
 
 ---
