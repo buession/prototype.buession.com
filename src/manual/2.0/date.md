@@ -1,4 +1,18 @@
-# Date 对象
+# Date 参考手册
+
+
+### 方法
+
+|  方法                                         | 描述                   |
+|  ----                                        | ----                   |
+| [isLeapYear](date.html#isleapyear)           | 判断是否为闰年           |
+| [getSeason](date.html#getseason)             | 获取季节                |
+| [getDayOfYear](date.html#getdayofyear)       | 获取年份中的第几天       |
+| [getDaysOfYear](date.html#getdaysofyear)     | 获取年份总天数           |
+| [format](date.html#formatformat-string)      | 将日期时间格式化为字符串  |
+
+
+---
 
 
 ### **isLeapYear()**
