@@ -19,7 +19,7 @@
 
 * 功能描述：数字填充
 
-* 参数：length - `number` 长度
+* 参数：length - `number` 长度  
        radix - `number` 进制
 
 * 返回值：`string` 填充后的字符串数字
