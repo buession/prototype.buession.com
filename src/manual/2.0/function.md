@@ -1,4 +1,15 @@
-# Function 对象
+# Function 参考手册
+
+
+### 方法
+
+|  方法                                                         | 描述                   |
+|  ----                                                        | ----                   |
+| [argumentNames](function.html#argumentnames...args-any)      | 获取函数参数名称         |
+| [delay](function.html#delaytimeout-number)                   | 延时执行函数             |
+
+
+---
 
 
 ### **argumentNames(...args: any)**

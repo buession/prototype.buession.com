@@ -1,4 +1,25 @@
-# Document 对象
+# Document 参考手册
+
+
+### 属性
+
+|  属性                                                              | 描述                                       |
+|  ----                                                             | ----                                       |
+| [fullScreen](document.html#readonly-fullscreen)                   | 检测当前文档是否全屏                          |
+| [fullScreenEnabled](document.html#readonly-fullscreenenabled)     | 检测当前浏览器是否支持全屏模式                 |
+| [fullScreenElement](document.html#readonly-fullscreenelement)     | 检测当前文档中正在以全屏模式显示的 Element 节点  |
+| [fullScreen](document.html#readonly-fullscreen)                   | 检测当前文档是否全屏                          |
+
+
+### 方法
+
+|  方法                                                                | 描述              |
+|  ----                                                               | ----             |
+| [requestFullscreen](document.html#readonly-fullscreenelement)       | 请求进入全屏模式    |
+| [exitFullscreen](document.html#exitfullscreen)                      | 退出全屏模式       |
+
+
+---
 
 
 ### **readonly fullScreen**
