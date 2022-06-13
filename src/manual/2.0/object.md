@@ -263,7 +263,7 @@ export default defineComponent({
 原生 JavaScript
 ```javascript
 <script type="text/javascript">
-  var result = Object.isSymbol(new Set()); // true
+  var result = Object.isSymbol(Symbol('a')); // true
 </script>
 ```
 
@@ -299,7 +299,7 @@ export default defineComponent({
 原生 JavaScript
 ```javascript
 <script type="text/javascript">
-  var result = Object.isPromise(new Set()); // true
+  var result = Object.isPromise(new Promise(function(){})); // true
 </script>
 ```
 
@@ -335,7 +335,7 @@ export default defineComponent({
 原生 JavaScript
 ```javascript
 <script type="text/javascript">
-  var result = Object.isPrimitive(new Set()); // true
+  var result = Object.isPrimitive(11); // true
 </script>
 ```
 
@@ -371,7 +371,7 @@ export default defineComponent({
 原生 JavaScript
 ```javascript
 <script type="text/javascript">
-  var result = Object.isFunction(new Set()); // true
+  var result = Object.isFunction(new Set()); // false
 </script>
 ```
 
@@ -386,7 +386,7 @@ vue
 import { defineComponent } from 'vue';
 export default defineComponent({
   setup() {
-    const result: boolean = Object.isFunction({"a":"A"}) // false
+    const result: boolean = Object.isFunction("a".replace) // false
   }
 });
 </script>
@@ -407,7 +407,7 @@ export default defineComponent({
 原生 JavaScript
 ```javascript
 <script type="text/javascript">
-  var result = Object.isArray(new Set()); // true
+  var result = Object.isArray([1, 2]); // true
 </script>
 ```
 
@@ -443,7 +443,7 @@ export default defineComponent({
 原生 JavaScript
 ```javascript
 <script type="text/javascript">
-  var result = Object.isString(new Set()); // true
+  var result = Object.isString(1); // false
 </script>
 ```
 
@@ -458,7 +458,7 @@ vue
 import { defineComponent } from 'vue';
 export default defineComponent({
   setup() {
-    const result: boolean = Object.isString({"a":"A"}) // false
+    const result: boolean = Object.isString("1") // true
   }
 });
 </script>
@@ -479,7 +479,7 @@ export default defineComponent({
 原生 JavaScript
 ```javascript
 <script type="text/javascript">
-  var result = Object.isNumber(new Set()); // true
+  var result = Object.isNumber(1.0); // true
 </script>
 ```
 
@@ -494,7 +494,7 @@ vue
 import { defineComponent } from 'vue';
 export default defineComponent({
   setup() {
-    const result: boolean = Object.isNumber({"a":"A"}) // false
+    const result: boolean = Object.isNumber("1.0") // false
   }
 });
 </script>
@@ -515,7 +515,7 @@ export default defineComponent({
 原生 JavaScript
 ```javascript
 <script type="text/javascript">
-  var result = Object.isBoolean(new Set()); // true
+  var result = Object.isBoolean(false); // true
 </script>
 ```
 
@@ -530,7 +530,7 @@ vue
 import { defineComponent } from 'vue';
 export default defineComponent({
   setup() {
-    const result: boolean = Object.isBoolean({"a":"A"}) // false
+    const result: boolean = Object.isBoolean(1) // false
   }
 });
 </script>
@@ -551,7 +551,7 @@ export default defineComponent({
 原生 JavaScript
 ```javascript
 <script type="text/javascript">
-  var result = Object.isRegExp(new Set()); // true
+  var result = Object.isRegExp(/^[a-z]$/); // true
 </script>
 ```
 
@@ -566,7 +566,7 @@ vue
 import { defineComponent } from 'vue';
 export default defineComponent({
   setup() {
-    const result: boolean = Object.isRegExp({"a":"A"}) // false
+    const result: boolean = Object.isRegExp('/^[a-z]$/') // false
   }
 });
 </script>
@@ -587,7 +587,7 @@ export default defineComponent({
 原生 JavaScript
 ```javascript
 <script type="text/javascript">
-  var result = Object.isFile(new Set()); // true
+  var result = Object.isFile(new File(['text1', 'text2'], 'test.txt', {type: 'text/plain'})); // true
 </script>
 ```
 
@@ -602,7 +602,7 @@ vue
 import { defineComponent } from 'vue';
 export default defineComponent({
   setup() {
-    const result: boolean = Object.isFile({"a":"A"}) // false
+    const result: boolean = bject.isFile(document) // false
   }
 });
 </script>
@@ -623,7 +623,7 @@ export default defineComponent({
 原生 JavaScript
 ```javascript
 <script type="text/javascript">
-  var result = Object.isWindow(new Set()); // true
+  var result = Object.isWindow(window); // true
 </script>
 ```
 
@@ -638,7 +638,7 @@ vue
 import { defineComponent } from 'vue';
 export default defineComponent({
   setup() {
-    const result: boolean = Object.isWindow({"a":"A"}) // false
+    const result: boolean = Object.isWindow(document) // false
   }
 });
 </script>
@@ -659,7 +659,7 @@ export default defineComponent({
 原生 JavaScript
 ```javascript
 <script type="text/javascript">
-  var result = Object.isElement(new Set()); // true
+  var result = Object.isElement(document); // false
 </script>
 ```
 
@@ -674,7 +674,7 @@ vue
 import { defineComponent } from 'vue';
 export default defineComponent({
   setup() {
-    const result: boolean = Object.isElement({"a":"A"}) // false
+    const result: boolean = Object.isElement(document.body) // false
   }
 });
 </script>
@@ -695,7 +695,7 @@ export default defineComponent({
 原生 JavaScript
 ```javascript
 <script type="text/javascript">
-  var result = Object.isEvent(new Set()); // true
+  var result = Object.isEvent(document.onclick); // false
 </script>
 ```
 
@@ -710,7 +710,7 @@ vue
 import { defineComponent } from 'vue';
 export default defineComponent({
   setup() {
-    const result: boolean = Object.isEvent({"a":"A"}) // false
+    const result: boolean = Object.isEvent(document.onclick) // false
   }
 });
 </script>
@@ -731,7 +731,7 @@ export default defineComponent({
 原生 JavaScript
 ```javascript
 <script type="text/javascript">
-  var result = Object.isNull(new Set()); // true
+  var result = Object.isNull(null); // true
 </script>
 ```
 
@@ -746,7 +746,7 @@ vue
 import { defineComponent } from 'vue';
 export default defineComponent({
   setup() {
-    const result: boolean = Object.isNull({"a":"A"}) // false
+    const result: boolean = Object.isNull("A") // false
   }
 });
 </script>
@@ -767,7 +767,7 @@ export default defineComponent({
 原生 JavaScript
 ```javascript
 <script type="text/javascript">
-  var result = Object.isUndefined(new Set()); // true
+  var result = Object.isUndefined(a); // true
 </script>
 ```
 
@@ -782,7 +782,7 @@ vue
 import { defineComponent } from 'vue';
 export default defineComponent({
   setup() {
-    const result: boolean = Object.isUndefined({"a":"A"}) // false
+    const result: boolean = Object.isUndefined(b) // true
   }
 });
 </script>
@@ -803,7 +803,7 @@ export default defineComponent({
 原生 JavaScript
 ```javascript
 <script type="text/javascript">
-  var result = Object.isUndefinedOrNull(new Set()); // true
+  var result = Object.isUndefinedOrNull(a); // true
 </script>
 ```
 
@@ -818,7 +818,7 @@ vue
 import { defineComponent } from 'vue';
 export default defineComponent({
   setup() {
-    const result: boolean = Object.isUndefinedOrNull({"a":"A"}) // false
+    const result: boolean = Object.isUndefinedOrNull(document.body) // false
   }
 });
 </script>
@@ -839,7 +839,7 @@ export default defineComponent({
 原生 JavaScript
 ```javascript
 <script type="text/javascript">
-  var result = Object.clone(new Set()); // true
+  var result = Object.clone({"a": "A"}); // {"a": "A"}
 </script>
 ```
 
@@ -854,7 +854,7 @@ vue
 import { defineComponent } from 'vue';
 export default defineComponent({
   setup() {
-    const result: any = Object.clone({"a":"A"}) // false
+    const result: any = Object.clone({"a":"A"}) // {"a": "A"}
   }
 });
 </script>
