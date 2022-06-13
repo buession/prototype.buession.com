@@ -371,7 +371,7 @@ export default defineComponent({
 原生 JavaScript
 ```javascript
 <script type="text/javascript">
-  var result = Object.isFunction(new Set()); // false
+  var result = Object.isFunction(location.href); // false
 </script>
 ```
 
@@ -386,7 +386,7 @@ vue
 import { defineComponent } from 'vue';
 export default defineComponent({
   setup() {
-    const result: boolean = Object.isFunction("a".replace) // false
+    const result: boolean = Object.isFunction("a".replace) // true
   }
 });
 </script>
