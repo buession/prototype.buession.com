@@ -909,13 +909,13 @@ export default defineComponent({
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type - `NUMERIC | LETTER | LETTER_NUMERIC | CHINESE | undefined` 生成类型，可选参数，当未指定时为 LETTER_NUMERIC
 
-    NUMERIC      - 数字随机字符串
+        NUMERIC      - 数字随机字符串
 
-    LETTER       - 英文随机字符串
+        LETTER       - 英文随机字符串
 
-    LETTER_NUMERIC - 英文数字混合随机字符串
+        LETTER_NUMERIC - 英文数字混合随机字符串
 
-    CHINESE      - 中文随机字符串
+        CHINESE      - 中文随机字符串
 
 * 返回值：`string` 随机字符串
 
