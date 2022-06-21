@@ -364,6 +364,7 @@ export default defineComponent({
 * 功能描述：截取字符串，超出部分用 truncation 替代
 
 * 参数：length - `number` 截取长度
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;truncation - `string` 替换字符串
 
 * 返回值：`string` 截取后的字符串；实际截取长度：当 length 小于等于 truncation 的长度时为，length；当 length 大于 truncation 的长度时为，length - truncation.length
@@ -905,6 +906,7 @@ export default defineComponent({
 * 功能描述：生成随机字符串
 
 * 参数：length - `number` 生成字符串的长度
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type - `NUMERIC | LETTER | LETTER_NUMERIC | CHINESE | undefined` 生成类型，可选参数，当未指定时为 LETTER_NUMERIC
 
     NUMERIC      - 数字随机字符串
