@@ -412,7 +412,7 @@ vue
 import { defineComponent } from 'vue';
 export default defineComponent({
   setup() {
-    const result: string = new String(" Abc ").isEmpty() // "Abc "
+    const result: string = new String(" Abc ").ltrim() // "Abc "
   }
 });
 </script>
@@ -448,7 +448,7 @@ vue
 import { defineComponent } from 'vue';
 export default defineComponent({
   setup() {
-    const result: string = new String(" Abc ").isEmpty() // " Abc"
+    const result: string = new String(" Abc ").rtrim() // " Abc"
   }
 });
 </script>
