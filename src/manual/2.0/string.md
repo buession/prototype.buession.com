@@ -17,7 +17,19 @@
 | [truncation](string.html#isobjectobj-any)                       | 截取字符串，超出部分用 truncation 替代        |
 | [ltrim](string.html#isobjectobj-any)                       | 删除字符串开头的空白字符        |
 | [rtrim](string.html#isobjectobj-any)                       | 删除字符串结尾的空白字符        |
-
+| [startsWith](string.html#isobjectobj-any)                       | 判断字符串是否以给定的字符串开头        |
+| [endsWith](string.html#isobjectobj-any)                       | 判断字符串是否以给定的字符串结尾        |
+| [lcfirst](string.html#isobjectobj-any)                       | 首字母小写        |
+| [ucfirst](string.html#isobjectobj-any)                       | 首字母大写        |
+| [escapeHTML](string.html#isobjectobj-any)                       | 将 HTML 编码        |
+| [unescapeHTML](string.html#isobjectobj-any)                       | 将 HTML 实体字符解码        |
+| [stripTag](string.html#isobjectobj-any)                       | 删除 HTML 标签        |
+| [stripTags](string.html#isobjectobj-any)                       | 批量删除 HTML 标签        |
+| [stripScripts](string.html#isobjectobj-any)                       | 删除 script 标签        |
+| [toArray](string.html#isobjectobj-any)                       | 将字符串转换为数组        |
+| [inspect](string.html#isobjectobj-any)                       | 返回一个数组的字符串表示形式        |
+| [hashCode](string.html#isobjectobj-any)                       | 获取字符串 hash code        |
+| [random](string.html#isobjectobj-any)                       | 生成随机字符串       |
 
 ---
 
@@ -449,6 +461,483 @@ import { defineComponent } from 'vue';
 export default defineComponent({
   setup() {
     const result: string = new String(" Abc ").rtrim() // " Abc"
+  }
+});
+</script>
+```
+
+
+### **startsWith(str: string)**
+* 类型：`Function`
+
+* 功能描述：判断字符串是否以给定的字符串开头
+
+* 参数：str - `string` 搜索的字符串
+
+* 返回值：`boolean` 字符串是否以给定的字符串开头返回 true；否则，返回 false
+
+示例：
+
+原生 JavaScript
+```javascript
+<script type="text/javascript">
+  var result = "Abc".startsWith("a"); // false
+</script>
+```
+
+vue
+```html
+<template>
+  <div>
+  </div>
+</template>
+
+<script lang="ts">
+import { defineComponent } from 'vue';
+export default defineComponent({
+  setup() {
+    const result: boolean = new String("aBc").startsWith("a") // true
+  }
+});
+</script>
+```
+
+
+### **endsWith(str: string)**
+* 类型：`Function`
+
+* 功能描述：判断字符串是否以给定的字符串结尾
+
+* 参数：str - `string` 搜索的字符串
+
+* 返回值：`boolean` 字符串是否以给定的字符串结尾返回 true；否则，返回 false
+
+示例：
+
+原生 JavaScript
+```javascript
+<script type="text/javascript">
+  var result = "Abc".endsWith("C"); // false
+</script>
+```
+
+vue
+```html
+<template>
+  <div>
+  </div>
+</template>
+
+<script lang="ts">
+import { defineComponent } from 'vue';
+export default defineComponent({
+  setup() {
+    const result: boolean = new String("aBc").endsWith("c") // true
+  }
+});
+</script>
+```
+
+
+### **lcfirst()**
+* 类型：`Function`
+
+* 功能描述：首字母小写
+
+* 参数：无
+
+* 返回值：`string` 首字母小写后的字符串
+
+示例：
+
+原生 JavaScript
+```javascript
+<script type="text/javascript">
+  var result = "Abc".lcfirst(); // "abc"
+</script>
+```
+
+vue
+```html
+<template>
+  <div>
+  </div>
+</template>
+
+<script lang="ts">
+import { defineComponent } from 'vue';
+export default defineComponent({
+  setup() {
+    const result: string = new String("abc").lcfirst() // "abc"
+  }
+});
+</script>
+```
+
+
+### **ucfirst()**
+* 类型：`Function`
+
+* 功能描述：首字母大写
+
+* 参数：无
+
+* 返回值：`string` 首字母大写后的字符串
+
+示例：
+
+原生 JavaScript
+```javascript
+<script type="text/javascript">
+  var result = "abc".ucfirst(); // "Abc"
+</script>
+```
+
+vue
+```html
+<template>
+  <div>
+  </div>
+</template>
+
+<script lang="ts">
+import { defineComponent } from 'vue';
+export default defineComponent({
+  setup() {
+    const result: string = new String("abc").lcfirst() // "Abc"
+  }
+});
+</script>
+```
+
+
+### **escapeHTML()**
+* 类型：`Function`
+
+* 功能描述：将 HTML 编码，参考：[https://www.w3school.com.cn/html/html_entities.asp](https://www.w3school.com.cn/html/html_entities.asp)
+
+* 参数：无
+
+* 返回值：`string` 编码后的字符串
+
+示例：
+
+原生 JavaScript
+```javascript
+<script type="text/javascript">
+  var result = "<a href='https://www.domain.com'>test</a>".escapeHTML(); // &lt;a href='https://www.domain.com'&gt;test&lt;/a&gt;
+</script>
+```
+
+vue
+```html
+<template>
+  <div>
+  </div>
+</template>
+
+<script lang="ts">
+import { defineComponent } from 'vue';
+export default defineComponent({
+  setup() {
+    const result: string = new String("<a href='https://www.domain.com'>test</a>").lcfirst() // &lt;a href='https://www.domain.com'&gt;test&lt;/a&gt;
+  }
+});
+</script>
+```
+
+
+### **unescapeHTML()**
+* 类型：`Function`
+
+* 功能描述：将 HTML 实体字符解码，参考：[https://www.w3school.com.cn/html/html_entities.asp](https://www.w3school.com.cn/html/html_entities.asp)
+
+* 参数：无
+
+* 返回值：`string` 解码后的字符串
+
+示例：
+
+原生 JavaScript
+```javascript
+<script type="text/javascript">
+  var result = "&lt;a href='https://www.domain.com'&gt;test&lt;/a&gt;".unescapeHTML(); // <a href='https://www.domain.com'>test</a>
+</script>
+```
+
+vue
+```html
+<template>
+  <div>
+  </div>
+</template>
+
+<script lang="ts">
+import { defineComponent } from 'vue';
+export default defineComponent({
+  setup() {
+    const result: string = "&lt;a href='https://www.domain.com'&gt;test&lt;/a&gt;".unescapeHTML() // <a href='https://www.domain.com'>test</a>
+  }
+});
+</script>
+```
+
+
+### **stripTag(tag: string)**
+* 类型：`Function`
+
+* 功能描述：删除 HTML 标签
+
+* 参数：tag - `string` 待删除标签
+
+* 返回值：`string` 删除标签后的字符串
+
+示例：
+
+原生 JavaScript
+```javascript
+<script type="text/javascript">
+  var result = "<a href='https://www.domain.com'>test</a><i></i>".stripTag("a"); // test<i></i>
+</script>
+```
+
+vue
+```html
+<template>
+  <div>
+  </div>
+</template>
+
+<script lang="ts">
+import { defineComponent } from 'vue';
+export default defineComponent({
+  setup() {
+    const result: string = "<a href='https://www.domain.com'>test</a><i></i>".stripTag("a") // test<i></i>
+  }
+});
+</script>
+```
+
+
+### **stripTags(tag: string)**
+* 类型：`Function`
+
+* 功能描述：批量删除 HTML 标签
+
+* 参数：tag - `string[] | string` 删除指定的标签
+
+* 返回值：`string` 删除标签后的字符串
+
+示例：
+
+原生 JavaScript
+```javascript
+<script type="text/javascript">
+  var result = "<a href='https://www.domain.com'>test</a><i></i><em>EM</em>".stripTags(["a", "i"]); // test<em>EM</em>
+</script>
+```
+
+vue
+```html
+<template>
+  <div>
+  </div>
+</template>
+
+<script lang="ts">
+import { defineComponent } from 'vue';
+export default defineComponent({
+  setup() {
+    const result: string = "<a href='https://www.domain.com'>test</a><i></i><em>EM</em>".stripTags(["a", "i"]) // test<em>EM</em>
+  }
+});
+</script>
+```
+
+
+### **stripScripts()**
+* 类型：`Function`
+
+* 功能描述：删除 script 标签
+
+* 参数：无
+
+* 返回值：`string` 删除 script 标签后的字符串
+
+示例：
+
+原生 JavaScript
+```javascript
+<script type="text/javascript">
+  var result = '<script type="text/javascript">alert("test");</script>test'.stripScripts(); // test
+</script>
+```
+
+vue
+```html
+<template>
+  <div>
+  </div>
+</template>
+
+<script lang="ts">
+import { defineComponent } from 'vue';
+export default defineComponent({
+  setup() {
+    const result: string = '<script type="text/javascript">alert("test");</script>test'.stripScripts() // <test
+  }
+});
+</script>
+```
+
+
+### **toArray(delimiter: string)**
+* 类型：`Function`
+
+* 功能描述：将字符串转换为数组
+
+* 参数：delimiter - `string` 分隔字符
+
+* 返回值：`string[]` 字符串数组
+
+示例：
+
+原生 JavaScript
+```javascript
+<script type="text/javascript">
+  var result = "a|b|c".toArray('|'); // [ "a", "b", "c" ]
+</script>
+```
+
+vue
+```html
+<template>
+  <div>
+  </div>
+</template>
+
+<script lang="ts">
+import { defineComponent } from 'vue';
+export default defineComponent({
+  setup() {
+    const result: string[] = "a|b||c".toArray('||') // [ "a|b", "c" ]
+  }
+});
+</script>
+```
+
+
+### **inspect(useDoubleQuotes: boolean)**
+* 类型：`Function`
+
+* 功能描述：返回一个数组的字符串表示形式
+
+* 参数：useDoubleQuotes - `boolean` 是否使用双引号引住
+
+* 返回值：`string` 数组的字符串表示形式
+
+示例：
+
+原生 JavaScript
+```javascript
+<script type="text/javascript">
+  var result = "a|b|c".inspect(true); // \"a|b|c\"
+</script>
+```
+
+vue
+```html
+<template>
+  <div>
+  </div>
+</template>
+
+<script lang="ts">
+import { defineComponent } from 'vue';
+export default defineComponent({
+  setup() {
+    const result: string = "a|b|c".inspect(false) // 'a|b|c'
+  }
+});
+</script>
+```
+
+
+### **hashCode()**
+* 类型：`Function`
+
+* 功能描述：获取字符串 hash code
+
+* 参数：无
+
+* 返回值：`number` 字符串的 hash code
+
+示例：
+
+原生 JavaScript
+```javascript
+<script type="text/javascript">
+  var result = "abc".hashCode(); // 96354
+</script>
+```
+
+vue
+```html
+<template>
+  <div>
+  </div>
+</template>
+
+<script lang="ts">
+import { defineComponent } from 'vue';
+export default defineComponent({
+  setup() {
+    const result: number = "abcABC".hashCode() // 2870546592
+  }
+});
+</script>
+```
+
+
+### **random(length: number, type?: RandomType = "NUMERIC" | "LETTER" | "LETTER_NUMERIC" | "CHINESE" | undefined)**
+* 类型：`Function`
+
+* 功能描述：生成随机字符串
+
+* 参数：length - `number` 生成字符串的长度
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type - `NUMERIC | LETTER | LETTER_NUMERIC | CHINESE | undefined` 生成类型，可选参数，当未指定时为 LETTER_NUMERIC
+
+NUMERIC      - 数字随机字符串
+
+LETTER       - 英文随机字符串
+
+LETTER_NUMERIC - 英文数字混合随机字符串
+
+CHINESE      - 中文随机字符串
+
+* 返回值：`string` 随机字符串
+
+示例：
+
+原生 JavaScript
+```javascript
+<script type="text/javascript">
+  var result = String.random(6); // 1Diim2
+</script>
+```
+
+vue
+```html
+<template>
+  <div>
+  </div>
+</template>
+
+<script lang="ts">
+import { defineComponent } from 'vue';
+export default defineComponent({
+  setup() {
+    const result: string = String.random(6, "NUMERIC") // 881773
   }
 });
 </script>
