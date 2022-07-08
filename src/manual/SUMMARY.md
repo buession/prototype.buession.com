@@ -15,5 +15,5 @@
     * [Object](2.0/object.md)
     * [String](2.0/string.md)
     * [Window](2.0/window.md)
-      * [Location](2.0/window.md)
       * [Browser](2.0/window.md)
+      * [Location](2.0/window.md)
