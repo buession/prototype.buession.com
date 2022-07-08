@@ -3,17 +3,17 @@
 
 ### 属性
 
-|  属性                                                              | 描述                         |
-|  ----                                                             | ----                         |
-| [browser](window.html#readonly-browser)                           | 浏览器信息对象                 |
-| [location](window.html#readonly-location)                         | Location 对象                 |
+|  属性                                              | 描述                         |
+|  ----                                             | ----                         |
+| [browser](browser.html)                           | 浏览器信息对象                 |
+| [location](location.html)                         | Location 对象                 |
 
 
 ### 方法
 
-|  方法                                                         | 描述                   |
-|  ----                                                        | ----                   |
-| [copy](window.html#argumentnames...args-any)      | 将字符串复制到剪贴板         |
+|  方法                                    | 描述                   |
+|  ----                                   | ----                   |
+| [copy](window.html#copystr-string)      | 将字符串复制到剪贴板      |
 
 
 ---
