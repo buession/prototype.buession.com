@@ -3,33 +3,33 @@
 
 ### 方法
 
-|  方法                                                          | 描述                           |
-|  ----                                                         | ----                           |
-| [exists](string.html#typeobj-any)                               | 判断字符串是否存在                 |
-| [equals](string.html#rawtypeobj-any)                         | 判断字符串是否相等              |
-| [equalsIgnoreCase](string.html#isobjectobj-any)                       | 判断字符串是否相等，不考虑大小写        |
-| [isEmpty](string.html#isobjectobj-any)                       | 判断是否为空字符串        |
-| [isNotEmpty](string.html#isobjectobj-any)                       | 判断是否不为空字符串        |
-| [isBlank](string.html#isobjectobj-any)                       | 判断是否为空白字符串        |
-| [repeat](string.html#isobjectobj-any)                       | 重复一个字符串        |
-| [left](string.html#isobjectobj-any)                       | 截取字符串左边边指定数目的字符串        |
-| [right](string.html#isobjectobj-any)                       | 截取字符串右边指定数目的字符串        |
-| [truncation](string.html#isobjectobj-any)                       | 截取字符串，超出部分用 truncation 替代        |
-| [ltrim](string.html#isobjectobj-any)                       | 删除字符串开头的空白字符        |
-| [rtrim](string.html#isobjectobj-any)                       | 删除字符串结尾的空白字符        |
-| [startsWith](string.html#isobjectobj-any)                       | 判断字符串是否以给定的字符串开头        |
-| [endsWith](string.html#isobjectobj-any)                       | 判断字符串是否以给定的字符串结尾        |
-| [lcfirst](string.html#isobjectobj-any)                       | 首字母小写        |
-| [ucfirst](string.html#isobjectobj-any)                       | 首字母大写        |
-| [escapeHTML](string.html#isobjectobj-any)                       | 将 HTML 编码        |
-| [unescapeHTML](string.html#isobjectobj-any)                       | 将 HTML 实体字符解码        |
-| [stripTag](string.html#isobjectobj-any)                       | 删除 HTML 标签        |
-| [stripTags](string.html#isobjectobj-any)                       | 批量删除 HTML 标签        |
-| [stripScripts](string.html#isobjectobj-any)                       | 删除 script 标签        |
-| [toArray](string.html#isobjectobj-any)                       | 将字符串转换为数组        |
-| [inspect](string.html#isobjectobj-any)                       | 返回一个数组的字符串表示形式        |
-| [hashCode](string.html#isobjectobj-any)                       | 获取字符串 hash code        |
-| [random](string.html#isobjectobj-any)                       | 生成随机字符串       |
+|  方法                                                                                       | 描述                                 |
+|  ----                                                                                       | ----                                |
+| [exists](string.html#existsstr-string)                                                      | 判断字符串是否存在                    |
+| [equals](string.html#equalsstr-string-&#124;-undefined-&#124;-null)                         | 判断字符串是否相等                    |
+| [equalsIgnoreCase](string.html#equalsignorecasestr-string-&#124;-undefined-&#124;-null)     | 判断字符串是否相等，不考虑大小写        |
+| [isEmpty](string.html#isempty)                                                              | 判断是否为空字符串                    |
+| [isNotEmpty](string.html#isnotempty)                                                        | 判断是否不为空字符串                   |
+| [isBlank](string.html#isblank)                                                              | 判断是否为空白字符串                   |
+| [repeat](string.html#repeatcount-number)                                                    | 重复一个字符串                        |
+| [left](string.html#leftlength-number)                                                       | 截取字符串左边边指定数目的字符串         |
+| [right](string.html#rightlength-number)                                                     | 截取字符串右边指定数目的字符串          |
+| [truncation](string.html#truncationlength-number,-truncation-string)                        | 截取字符串，超出部分用 truncation 替代  |
+| [ltrim](string.html#ltrim)                                                                  | 删除字符串开头的空白字符                |
+| [rtrim](string.html#rtrim)                                                                  | 删除字符串结尾的空白字符                |
+| [startsWith](string.html#startswithstr-string)                                              | 判断字符串是否以给定的字符串开头         |
+| [endsWith](string.html#endswithstr-string)                                                  | 判断字符串是否以给定的字符串结尾         |
+| [lcfirst](string.html#lcfirst)                                                              | 首字母小写                            |
+| [ucfirst](string.html#ucfirst)                                                              | 首字母大写                            |
+| [escapeHTML](string.html#escapehtml)                                                        | 将 HTML 编码                         |
+| [unescapeHTML](string.html#unescapehtml)                                                    | 将 HTML 实体字符解码                   |
+| [stripTag](string.html#striptagtag-string)                                                  | 删除 HTML 标签                        |
+| [stripTags](string.html#striptagstag-string)                                                | 批量删除 HTML 标签                     |
+| [stripScripts](string.html#stripscripts)                                                    | 删除 script 标签                      |
+| [toArray](string.html#toarraydelimiter-string)                                              | 将字符串转换为数组                      |
+| [inspect](string.html#inspectusedoublequotes-boolean)                                       | 返回一个数组的字符串表示形式             |
+| [hashCode](string.html#hashcode)                                                            | 获取字符串 hash code                   |
+| [random](string.html#randomlength-number,-type?-randomtype-=-"numeric"-&#124;-"letter"-&#124;-"letter_numeric"-&#124;-"chinese"-&#124;-undefined)                       | 生成随机字符串       |
 
 ---
 

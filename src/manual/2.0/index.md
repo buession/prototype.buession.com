@@ -13,3 +13,6 @@ Buession Prototype API 包含以下目录：
 #### [Function](function.md)
 #### [Math](math.md)
 #### [Number](number.md)
+#### [Object](object.md)
+#### [String](string.md)
+#### [Window](window.md)
