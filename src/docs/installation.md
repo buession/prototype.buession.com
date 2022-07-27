@@ -1,4 +1,7 @@
-您可以通过 [NPM](https://www.npmjs.com/)、[YARN](https://yarnpkg.com/) 或者通过 `<script>` 的方式引入 [unpkg.com](https://unpkg.com/) 上的包。
+# 安装及使用
+
+
+您可以通过 [NPM](https://www.npmjs.com/)、[YARN](https://yarnpkg.com/) 或者通过 `<script>` 的方式引入 [unpkg.com](https://unpkg.com/) 上的包；稳定版 <a href="https://www.npmjs.com/package/@buession/prototype" target="_blank"><img src="https://img.shields.io/npm/v/@buession/prototype" alt="Version" /></a>。
 
 ### NPM
 
