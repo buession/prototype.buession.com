@@ -9,6 +9,7 @@
     * [Array](2.1/array.md)
     * [Date](2.1/date.md)
     * [Document](2.1/document.md)
+      * [Cookie](2.1/cookie.md)
     * [Function](2.1/function.md)
     * [Math](2.1/math.md)
     * [Number](2.1/number.md)

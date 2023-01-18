@@ -16,7 +16,7 @@
 
 * 功能描述：产生一个指定范围内的随机数
 
-* 参数：min - `number` 返回的最低值  
+* 参数：min - `number` 返回的最低值
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;max - `number` 返回的最高值
 
 * 返回值：`number` 随机数

@@ -9,7 +9,7 @@
 | [fullScreenEnabled](document.html#readonly-fullscreenenabled)     | 检测当前浏览器是否支持全屏模式                 |
 | [fullScreenElement](document.html#readonly-fullscreenelement)     | 检测当前文档中正在以全屏模式显示的 Element 节点  |
 | [fullScreen](document.html#readonly-fullscreen)                   | 检测当前文档是否全屏                          |
-| [httpCookie](document.html#readonly-httpcookie)                   | Cookie 对象操作                          |
+| [httpCookie](cookie.html)                                         | Cookie 对象操作                          |
 
 
 ### 方法
