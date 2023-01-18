@@ -3,11 +3,11 @@
 
 ### 方法
 
-|  方法                                                         | 描述                   |
-|  ----                                                        | ----                   |
-| [set](cookie.html#argumentnames...args-any)      | 设置 Cookie         |
-| [get](cookie.html#delaytimeout-number)                   | 获取 Cookie             |
-| [delete](cookie.html#delaytimeout-number)                   | 删除 Cookie             |
+|  方法                                                                                           | 描述                   |
+|  ----                                                                                           | ----                   |
+| [set](cookie.html#setname-string,-value-string-|-null-|-undefined,-options?-cookieoptions)      | 设置 Cookie             |
+| [get](cookie.html#getname-string)                                                               | 获取 Cookie             |
+| [delete](cookie.html#ddeletename-string,-options?-cookieoptions)                                | 删除 Cookie             |
 
 
 ---
