@@ -14,7 +14,7 @@
 | [repeat](string.html#repeatcount-number)                                                    | 重复一个字符串                        |
 | [left](string.html#leftlength-number)                                                       | 截取字符串左边边指定数目的字符串         |
 | [right](string.html#rightlength-number)                                                     | 截取字符串右边指定数目的字符串          |
-| [truncation](string.html#truncationlength-number,-truncation-string)                        | 截取字符串，超出部分用 truncation 替代  |
+| [truncation](string.html#truncationlength-number,-truncation?-string-=-"...")               | 截取字符串，超出部分用 truncation 替代  |
 | [ltrim](string.html#ltrim)                                                                  | 删除字符串开头的空白字符                |
 | [rtrim](string.html#rtrim)                                                                  | 删除字符串结尾的空白字符                |
 | [startsWith](string.html#startswithstr-string)                                              | 判断字符串是否以给定的字符串开头         |

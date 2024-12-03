@@ -11,10 +11,10 @@
 
 ### 方法
 
-|  方法                                    | 描述                   |
-|  ----                                   | ----                   |
-| [copy](window.html#copystr-string)      | 将字符串复制到剪贴板      |
-| [delay](window.html#copystr-string)      | 将字符串复制到剪贴板      |
+|  方法                                                                    | 描述                   |
+|  ----                                                                   | ----                   |
+| [copy](window.html#copystr-string)                                      | 将字符串复制到剪贴板      |
+| [delay](window.html#delayfunc-function,-wait?-number,-...args-any)      | 延时执行方法             |
 
 
 ---
